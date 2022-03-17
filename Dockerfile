@@ -28,7 +28,8 @@ RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension bmewburn.vscode-intelephense-client
 
 # Install apt packages:
-RUN sudo apt-get install -y php
+RUN sudo apt-get install php -y
+RUN sudo apt-get install unrar -y
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
