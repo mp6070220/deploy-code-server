@@ -29,7 +29,7 @@ RUN code-server --install-extension bmewburn.vscode-intelephense-client
 
 # Install apt packages:
 RUN sudo apt-get install php -y
-RUN sudo apt-get install unrar -y
+RUN sudo apt-get install unrar-free -y
 RUN sudo apt install wget -y
 
 # Copy files: 
