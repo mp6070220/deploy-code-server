@@ -33,8 +33,7 @@ RUN sudo apt-get install php -y
 RUN sudo apt-get install unrar-free -y
 RUN sudo apt install wget -y
 RUN sudo apt install snapd -y
-RUN sudo systemctl start snapd.service
-RUN snap install hugo
+
 
 
 # Copy files: 
@@ -48,3 +47,6 @@ ENV PORT=8080
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
 ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
+
+RUN sudo systemctl start snapd.service
+RUN snap install hugo
