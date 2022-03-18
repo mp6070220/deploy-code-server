@@ -32,6 +32,8 @@ RUN code-server --install-extension bungcip.better-toml
 RUN sudo apt-get install php -y
 RUN sudo apt-get install unrar-free -y
 RUN sudo apt install wget -y
+RUN sudo apt install snapd -y
+RUN snap install hugo
 
 
 # Copy files: 
