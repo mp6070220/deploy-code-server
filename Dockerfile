@@ -32,6 +32,7 @@ RUN sudo apt-get install php -y
 RUN sudo apt-get install unrar-free -y
 RUN sudo apt install wget -y
 RUN sudo apt install fuse -y
+RUN sudo apt install libfuse2 -y
 
 # Copy files: 
 # COPY deploy-container/myTool /home/coder/myTool
