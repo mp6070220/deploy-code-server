@@ -33,6 +33,7 @@ RUN sudo apt-get install php -y
 RUN sudo apt-get install unrar-free -y
 RUN sudo apt install wget -y
 RUN sudo apt install snapd -y
+RUN service snapd start
 RUN snap install hugo
 
 
