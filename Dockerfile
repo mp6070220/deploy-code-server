@@ -28,6 +28,7 @@ RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension bmewburn.vscode-intelephense-client
 RUN code-server --install-extension bungcip.better-toml
 RUN code-server --install-extension zhuangtongfa.material-theme
+RUN code-server --install-extension HookyQR.beautify
 
 # Install apt packages:
 RUN sudo apt-get install php -y
