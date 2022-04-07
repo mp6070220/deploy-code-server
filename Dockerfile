@@ -9,6 +9,10 @@ COPY deploy-container/settings.json .local/share/code-server/User/settings.json
 # Use bash shell
 ENV SHELL=/bin/bash
 
+# Install NodeJS
+RUN sudo curl -fsSL https://deb.nodesource.com/setup_15.x | sudo bash -
+RUN sudo apt-get install -y nodejs
+
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y && sudo apt-get install -y apt-utils && sudo apt-get install -y curl
 RUN curl https://rclone.org/install.sh | sudo bash
